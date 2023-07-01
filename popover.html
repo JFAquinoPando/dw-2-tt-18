@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Estilos de la pagina -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- <link rel="stylesheet" href="./css/transicion.css"> -->
+
+    <!-- Archivos javascript -->
+    <script src="./js/jquery-3.3.1.min.js" defer></script>
+    <script src="./js/popper.min.js" defer></script>
+    <script src="./js/bootstrap.js" defer></script>
+    <script src="./js/test.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="mt-4">
+        <button type="button" class="btn btn-primary popo" data-container="body" data-toggle="popover" data-placement="top" data-delay="2000"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on top
+    </button>
+
+    <button type="button" class="btn btn-danger" 
+    data-animation="false"
+    data-container="body" data-toggle="popover" data-placement="right"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on right
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom"
+        data-content="Vivamus
+      sagittis lacus vel augue laoreet rutrum faucibus."
+      data-template='<div class="popover" role="tooltip"><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+      >
+        Popover on bottom
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-trigger="click" data-html="true"
+        data-content="<input type='text' placeholder='Hola'>">
+        Popover on left
+    </button>
+    </div>
+
+</body>
+
+</html>
